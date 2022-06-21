@@ -1,16 +1,16 @@
 <template>
-  <components :is="tag" v-bind="attrs" v-on="$listeners">
-    <slot v-bind="this._self" name="prev" />
-    <slot v-if="state === 'beforeStart'" v-bind="this._self" name="before" />
-    <slot v-if="state === 'preheat'" v-bind="this._self" name="preheat" />
-    <slot v-if="state === 'process' || state === 'stopped' || state === 'paused'" v-bind="this._self" name="process" />
-    <slot v-if="state === 'finished'" v-bind="this._self" name="finish" />
-    <slot v-bind="this._self" name="default" />
-  </components>
+  <component :is="tag" v-bind="attrs">
+    <slot :timeObj="timeObj" name="prev" />
+    <slot :timeObj="timeObj" v-if="state === 'beforeStart'" name="before" />
+    <slot :timeObj="timeObj" v-if="state === 'preheat'" name="preheat" />
+    <slot :timeObj="timeObj" v-if="state === 'process' || state === 'stopped' || state === 'paused'" name="process" />
+    <slot :timeObj="timeObj" v-if="state === 'finished'" name="finish" />
+    <slot :timeObj="timeObj" name="default" />
+  </component>
 </template>
 <script>
 export default {
-  name: 'vue-awesome-countdown',
+  name: 'vue-awesome-countdown-vue3',
   props: {
     startTime: {
       type: [String, Number, Date],

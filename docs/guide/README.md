@@ -4,7 +4,7 @@
 [![Monthly Downloads](https://img.shields.io/npm/dm/vue-awesome-countdown.svg)](https://www.npmjs.com/package/vue-awesome-countdown)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Countdown plug-in with high performance and high accuracy for [Vue](http://vuejs.org/)2.5.0+.
+Countdown plug-in with high performance and high accuracy for [Vue](http://vuejs.org/)3.0++.
 
 ## Installation
 
@@ -47,7 +47,7 @@ Vue.use(vueAwesomeCountdown);
 
 ## Usage
 
-Vue2.5.0+.
+Vue3.0++.
 ```html
 <countdown :end-time="new Date().getTime() + 60000">
   <span
