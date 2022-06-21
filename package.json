@@ -1,6 +1,6 @@
 {
   "name": "vue-awesome-countdown-vue3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue countdown plugin for vue3.",
   "main": "dist/index.js",
   "files": [

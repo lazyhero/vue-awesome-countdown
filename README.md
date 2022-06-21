@@ -8,38 +8,19 @@ Countdown plug-in with high performance and high accuracy for [Vue3](http://vuej
 Install
 
 ```sh
-$ npm install vue-awesome-countdown --save
+$ npm install vue-awesome-countdown-vue3 --save
 # or
-$ yarn add vue-awesome-countdown
+$ yarn add vue-awesome-countdown-vue3
 ```
 
 ### ES6
 
 ```js
 
-import vueAwesomeCountdown from 'vue-awesome-countdown'
+import vueAwesomeCountdown from 'vue-awesome-countdown-vue3'
 
-Vue.use(vueAwesomeCountdown, 'vac') // Component name, `countdown` and `vac` by default
-```
-
-### CommonJS
-
-```js
-var Vue = require('vue');
-var vueAwesomeCountdown = require('vue-awesome-countdown').default;
-
-Vue.use(vueAwesomeCountdown);
-```
-
-### Browser
-
-```html
-<script src="https://unpkg.com/vue@latest"></script>
-<script src="https://unpkg.com/vue-awesome-countdown@latest"></script>
-<!-- OR -->
-<script src="path/to/vue/vue.min.js"></script>
-<script src="path/to/vue-awesome-countdown/dist/vue-awesome-countdown.umd.min.js"></script>
-
+// in vue3
+app.use(vueAwesomeCountdown)
 ```
 
 ## Usage
@@ -63,7 +44,7 @@ Vue3.0++.
 </vac>
 ```
 
-Vue2.6.0+.
+Vue 3.
 ```html
 <countdown :end-time="new Date().getTime() + 60000">
   <template
@@ -101,10 +82,6 @@ Vue2.6.0+.
   </vac>
 </no-ssr>
 ```
-
-## Example demo
-
-[https://vac.js.org](https://vac.js.org)
 
 ## Props
 
@@ -196,5 +173,3 @@ The methods can be accesse through `slot-scop` or `$refs`.
 | finish | Function executed when countdown finished | `vm` |
 
 ### MIT License
-
-### Copyright &copy; 2018 LinQuan.
